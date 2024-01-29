@@ -13,6 +13,7 @@ Date: Jan 28, 2023
 
 class RectangleInterface
 {
+public:
   /** Updates the length and width of this Rectangle
    @param  newLength the new length for this Rectangle
    @param  newWidth the new width of this Rectangle
@@ -42,5 +43,5 @@ class RectangleInterface
 
   /** Destroys this Rectangle and frees its assigned memory. */
   virtual ~RectangleInterface() {}
-}
+};
 #endif
