@@ -6,8 +6,8 @@ Course: COSC-2436-007 (92905) III Data Structures
 Date: Jan 28, 2023
 */
 
-#ifndef RECTANGLE_
-#define RECTANGLE_
+#ifndef RECTANGLE_INTERFACE_
+#define RECTANGLE_INTERFACE_
 
 /** @file RectangleInterface.h */
 
@@ -26,7 +26,7 @@ class RectangleInterface
        Otherwise, the Rectabgle is not updated
    @return  True if this object is updated,
             and false otherwise. */
-  virtual void set(double newLength, double NewWidth) = 0;
+  virtual bool set(double newLength, double NewWidth) = 0;
 
   /** Gets the area of this Rectangle
    @return The area of this Rectangle. */
